@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+:root {
+  --small-weight: 300;
+  --medium-weight: 400;
+  --large-weight: 600;
+  --p-font-size: 18px;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+}
+.card {
+  margin: auto;
+  border-radius: 25px;
+}
+#main-card {
+  background-color: hsl(216, 50%, 16%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 280px;
+  height: 500px;
+  padding: 30px 20px;
+}
+#image-box {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin: auto;
+}
+#image-box img:first-child {
+  max-width: 100%;
+  max-height: 100%;
+}
+#main-card h1 {
+  position: relative;
+  width: 241px;
+  height: 38px;
+  left: 15px;
+
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: white;
+}
+#main-card p {
+  position: relative;
+  top: 0;
+  left: 15px;
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 30px;
+}
+#eth {
+  position: relative;
+  display: inline-block;
+  left: 5px;
+}
+#eth span {
+  color: hsl(178, 100%, 50%);
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  margin-left: 5px;
+}
+#time {
+  float: right;
+}
+#time span {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Outfit;
+  font-style: normal;
+  font-size: 18px;
+}
+hr {
+  margin-top: 20px;
+  border: 1px solid hsl(215, 32%, 27%);
+}
+#creator-info img {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: 5px;
+  left: 10px;
+}
+#creator-info p {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+}
+#creator-info p span {
+  font-weight: 600;
+}
+#creator-info p span:hover {
+  color: hsl(178, 100%, 50%);
+  font-weight: bold;
+  cursor: pointer;
+}
+#main-card h1:hover {
+  color: hsl(178, 100%, 50%);
+  font-weight: bold;
+  cursor: pointer;
+}
+#image-box:hover {
+  cursor: pointer;
+}
+/* #image-box img:first-child:hover {
+
+}
+#image-box img:last-child {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin: auto;
+} */
