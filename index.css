@@ -10,8 +10,6 @@
 * {
   font-family: "Outfit", sans-serif;
   letter-spacing: 2px;
-  margin: 0;
-  padding: 0;
 }
 body {
   background: var(--main-bg-color);
@@ -34,6 +32,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.fill-circle {
+  display: flex;
 }
 #outer-shadow {
   background-color: #0c182d;
@@ -112,7 +113,7 @@ body {
   box-sizing: border-box;
   width: 40px;
   height: 40px;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 500px;
   object-fit: cover;
 }
