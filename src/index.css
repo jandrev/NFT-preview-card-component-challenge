@@ -1,124 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
 :root {
-  --small-weight: 300;
-  --medium-weight: 400;
-  --large-weight: 600;
-  --p-font-size: 18px;
+  --main-bg-color: hsl(217, 54%, 11%);
+  --card-bg-color: hsl(216, 50%, 16%);
+  --line-color: hsl(215, 32%, 27%);
+  --cyan: hsl(178, 100%, 50%);
+  --soft-blue: hsl(215, 51%, 70%);
+}
+* {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 2px;
 }
 body {
-  background-color: hsl(217, 54%, 11%);
-  font-family: "Outfit", sans-serif;
-  font-style: normal;
+  background: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card {
-  margin: auto;
-  border-radius: 25px;
+  border-radius: 10px;
+}
+.light-text {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+.text-margin {
+  margin: 20px 25px;
 }
 #main-card {
-  background-color: hsl(216, 50%, 16%);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 280px;
-  height: 500px;
-  padding: 30px 20px;
+  background-color: var(--card-bg-color);
+  width: 350px;
+  height: 580 px;
+  padding: 20px 0 0 0;
 }
-#image-box {
-  width: 250px;
-  height: 250px;
-  position: relative;
+#image-card {
+  width: 300px;
+  height: 300px;
   margin: auto;
 }
-#image-box img:first-child {
-  max-width: 100%;
-  max-height: 100%;
+#image-card img:first-child {
+  width: 100%;
+  height: 100%;
 }
-#main-card h1 {
-  position: relative;
-  width: 241px;
-  height: 38px;
-  left: 15px;
-
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 38px;
-  color: white;
-}
-#main-card p {
-  position: relative;
-  top: 0;
-  left: 15px;
-  font-family: "Outfit", sans-serif;
-  font-style: normal;
-  font-weight: 300;
+#nft-description {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 30px;
+  line-height: 1.5em;
 }
-#eth {
-  position: relative;
-  display: inline-block;
-  left: 5px;
+#stats {
+  display: flex;
+  justify-content: space-between;
+}
+#stats > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #eth span {
-  color: hsl(178, 100%, 50%);
-  font-family: Outfit;
-  font-style: normal;
+  color: var(--cyan);
   font-weight: 600;
-  font-size: 18px;
-  line-height: 23px;
   margin-left: 5px;
 }
-#time {
-  float: right;
+#time img {
+  margin-right: 5px;
 }
-#time span {
-  color: rgba(255, 255, 255, 0.5);
-  font-family: Outfit;
-  font-style: normal;
-  font-size: 18px;
+#footer {
+  display: flex;
+  align-items: center;
 }
-hr {
-  margin-top: 20px;
-  border: 1px solid hsl(215, 32%, 27%);
-}
-#creator-info img {
-  display: inline-block;
-  position: relative;
+#footer img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  top: 5px;
-  left: 10px;
 }
-#creator-info p {
-  display: inline-block;
-  position: relative;
-  top: -15px;
+#footer p {
+  margin-left: 20px;
+  font-weight: 400;
 }
-#creator-info p span {
+#footer p span {
+  color: white;
   font-weight: 600;
 }
-#creator-info p span:hover {
-  color: hsl(178, 100%, 50%);
-  font-weight: bold;
+#footer p span:hover {
+  color: var(--cyan);
   cursor: pointer;
 }
-#main-card h1:hover {
-  color: hsl(178, 100%, 50%);
-  font-weight: bold;
+h1 {
+  color: white;
+  font-size: 20px;
+}
+h1:hover {
+  color: var(--cyan);
   cursor: pointer;
 }
-#image-box:hover {
-  cursor: pointer;
+hr {
+  width: 305px;
+  height: 1px;
+  background-color: var(--line-color);
+  border-style: none;
 }
-/* #image-box img:first-child:hover {
-
-}
-#image-box img:last-child {
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  margin: auto;
-} */
