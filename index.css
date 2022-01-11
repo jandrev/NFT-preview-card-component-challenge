@@ -10,6 +10,8 @@
 * {
   font-family: "Outfit", sans-serif;
   letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
 }
 body {
   background: var(--main-bg-color);
@@ -34,13 +36,13 @@ body {
   align-items: center;
 }
 #outer-shadow {
-  background-color: #0C182D;
+  background-color: #0c182d;
   width: 430px;
   height: 760px;
   border-radius: 20px;
 }
 #dim-shadow {
-  background-color: #0C1628;
+  background-color: #0c1628;
   width: 390px;
   height: 640px;
   border-radius: 20px;
@@ -107,11 +109,12 @@ body {
   align-items: center;
 }
 #footer img {
-  width: 42px;
-  height: 43px;
-  padding: 0 0;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
   border: 2px solid white;
-  border-radius: 50%;
+  border-radius: 500px;
+  object-fit: cover;
 }
 #footer p {
   margin-left: 20px;
